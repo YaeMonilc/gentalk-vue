@@ -1,0 +1,57 @@
+@media screen and (max-width:480px) {
+    .login {
+        width: 100vw;
+        background-color: var(--theme);
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .login > .topBar {
+        width: 90vw;
+        height: 5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8vw 5vw;
+    }
+
+    .topBar > .title {
+        font-size: 1.5em;
+    }
+
+    .topBar > .close {
+        min-width: 8vw;
+        min-height: 8vw;
+    }
+
+    .login > .layout {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10vw;
+    }
+
+    .layout > .input {
+        min-height: 14vw;
+        margin-top: 5vw;
+        text-align: center;
+    }
+
+    .layout > .button {
+        min-width: 80vw;
+        min-height: 14vw;
+        margin-top: 20vw;
+    }
+}

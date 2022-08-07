@@ -1,0 +1,20 @@
+/* Rotate */
+.rotate{
+    animation-name: rotate;
+    animation-duration: var(--animeRotateTime);
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+/* Scale */
+.scale{
+    animation-name: scale;
+    animation-duration: var(--animeScaleTime);
+}
+@keyframes scale {
+    from {transform: scale(.7)}
+    to {transform: scale(1)}
+}

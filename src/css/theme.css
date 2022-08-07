@@ -1,13 +1,44 @@
-:root{
-    --theme: #FFFFFF;
-    --stress: #FC8383;
+@font-face {
+    font-family: main;
+    src: url("@/assets/fonts/main.ttf");
 }
+
+:root{
+    /* Normal */
+    /*--theme: #FFFFFF;
+    --stress: #FC8383;*/
+
+    /* Black */
+    --theme: #2c2c2c;
+    --stress: #6b6b6b;
+
+    --warnColor: #FFFFFF;
+
+    --transitionTime: .2s;
+
+    --animeRotateTime: 2s;
+    --animeScaleTime: .5s;
+
+    --diffuseShadow: drop-shadow(0 0 10px var(--stress));
+    --diffuseShadowActive: drop-shadow(0 0 15px var(--stress));
+
+    --borderRadius: 5px;
+
+    --nameFontSize: .4em;
+    --contentFontSize: .8em;
+
+    --loadingFailed: url('@/assets/loadingfailed.png')
+}
+
 *{
     margin: 0;
     padding: 0;
     outline: none;
+    font-family: main, sans-serif;
+    overflow: hidden;
 }
 body{
     width: 100vw;
     height: 100vh;
+    background-color: var(--theme);
 }

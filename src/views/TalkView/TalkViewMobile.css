@@ -1,0 +1,80 @@
+@media screen and (max-width:480px){
+
+    .messageAnime-enter-active, .messageAnime-leave-active {
+        transition: all var(--transitionTime);
+    }
+    .messageAnime-enter, .messageAnime-leave-to {
+        opacity: 0;
+    }
+
+    .messageList{
+        width: 95vw;
+        height: 88vh;
+        padding: 2vh 2.5vw 10vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .messageItem{
+        margin-top: 3vw;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .messageItem-lines{
+        margin-top: 1vw;
+    }
+    .avatar{
+        width: 10vw;
+        border-radius: 100%;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vw;
+    }
+    .status{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .userName{
+        font-size: var(--nameFontSize);
+        color: var(--stress);
+    }
+    .message{
+        max-width: 60vw;
+        min-height: 5vw;
+        padding: 2vw;
+        margin-top: 1vw;
+        display: flex;
+        align-items: center;
+        background-color: var(--stress);
+        border-radius: var(--borderRadius);
+        overflow: scroll;
+    }
+    .message-lines{
+        margin-top: 0;
+        margin-left: 10vw;
+    }
+    .content{
+        color: var(--theme);
+        font-size: var(--contentFontSize);
+        word-wrap: break-word;
+    }
+
+    .content > img{
+        width: 60vw;
+        border-radius: var(--borderRadius);
+        background-attachment: fixed;
+    }
+    .content > img:before{
+        content:'(看到这个就代表图片加载失败了)';
+        width: 60vw;
+        height: 60vw;
+        background: var(--loadingFailed);
+        background-size: 100% 100%;
+        display: block;
+        text-align: center;
+        color: var(--warnColor);
+    }
+}
