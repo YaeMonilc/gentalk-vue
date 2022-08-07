@@ -1,0 +1,8 @@
+:root{
+    --theme: #FFFFFF;
+    --stress: #FC8383;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
