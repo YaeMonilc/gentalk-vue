@@ -65,16 +65,42 @@
     .content > img{
         width: 60vw;
         border-radius: var(--borderRadius);
-        background-attachment: fixed;
+        object-fit: cover;
     }
     .content > img:before{
         content:'(看到这个就代表图片加载失败了)';
         width: 60vw;
-        height: 60vw;
+        height: 65vw;
         background: var(--loadingFailed);
         background-size: 100% 100%;
         display: block;
         text-align: center;
         color: var(--warnColor);
     }
+
+    .sendMessageLayout{
+        width: 96vw;
+        height: 14vw;
+        padding: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        margin: auto;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: var(--borderRadius);
+        border-top-right-radius: var(--borderRadius);
+        background: var(--stress);
+    }
+
+    .messageInput{
+        min-width: 60vw;
+    }
+    .buttonInput{
+        min-width: 25vw;
+        min-height: 12.3vw;
+    }
+
 }

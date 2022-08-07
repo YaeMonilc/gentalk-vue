@@ -1,7 +1,7 @@
 /* Rotate */
 .rotate{
     animation-name: rotate;
-    animation-duration: var(--animeRotateTime);
+    animation-duration: .8s;
     animation-iteration-count: infinite;
 }
 @keyframes rotate {
@@ -12,9 +12,30 @@
 /* Scale */
 .scale{
     animation-name: scale;
-    animation-duration: var(--animeScaleTime);
+    animation-duration: .35s;
 }
 @keyframes scale {
     from {transform: scale(.7)}
     to {transform: scale(1)}
+}
+
+/* Opacity */
+.opacity{
+    animation-name: opacity;
+    animation-duration: .35s;
+}
+@keyframes opacity {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+/* Pan-UP */
+.pan-up{
+    animation-name: pan-up;
+    animation-duration: 1s;
+}
+@keyframes pan-up {
+    from {bottom: -100vw}
+    to {bottom: 0}
 }

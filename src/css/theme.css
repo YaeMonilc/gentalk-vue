@@ -4,13 +4,34 @@
 }
 
 :root{
-    /* Normal */
-    /*--theme: #FFFFFF;
-    --stress: #FC8383;*/
 
-    /* Black */
-    --theme: #2c2c2c;
-    --stress: #6b6b6b;
+    /* Black(暗黑) */
+    /*--theme: #2c2c2c;
+    --stress: #6b6b6b;*/
+
+    /* Emerald(翡翠) */
+    /*--theme: #ffffff;
+    --stress: #38b48b;*/
+
+    /* Calamus(菖蒲) */
+    /*--theme: #ffffff;
+    --stress: #cc7eb1;*/
+
+    /* Peach(桃) */
+    /*--theme: #ffffff;
+    --stress: #f09199;*/
+
+    /* Ultramarine(群青) */
+    --theme: #ffffff;
+    --stress: #4c6cb3;
+
+    /* Shion(紫苑) */
+    /*--theme: #ffffff;
+    --stress: #867ba9;*/
+
+    /* Half(半) */
+    /*--theme: #ffffff;
+    --stress: #a69abd;*/
 
     --warnColor: #FFFFFF;
 

@@ -7,36 +7,9 @@ export default {
         return {
             messages:[
                 {
-                    "account":"鴵",
+                    "account":"鴵A",
+                    "name":"114514",
                     "text":"<img src='https://iw233.cn/api.php?sort=random'>这图好"
-                },
-                {
-                    "account":"鴵",
-                    "text":"还看呢大厦乱"
-                },
-                {
-                    "account":"鴵",
-                    "text":"还看呢大厦乱"
-                },
-                {
-                    "account":"鴵",
-                    "text":"还看呢大厦乱"
-                },
-                {
-                    "account":"鴵1",
-                    "text":"还看呢大厦乱"
-                },
-                {
-                    "account":"鴵2",
-                    "text":"还看呢大厦乱"
-                },
-                {
-                    "account":"鴵3",
-                    "text":"还看呢大厦乱"
-                },
-                {
-                    "account":"鴵1",
-                    "text":"还看呢大厦乱"
                 }
             ]
         }

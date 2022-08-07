@@ -4,7 +4,7 @@
     min-height: 14vw;
     background-color: var(--stress);
     color: var(--theme);
-    border: 0;
+    border: var(--theme) solid 1px;
     border-radius: var(--borderRadius);
     transition: all var(--transitionTime);
 }
@@ -20,7 +20,7 @@
     padding-left: 3vw;
     padding-right: 3vw;
     background-color: var(--theme);
-    color: black;
+    color: var(--stress);
     border: var(--stress) solid 2px;
     border-radius: var(--borderRadius);
     transition: all var(--transitionTime);

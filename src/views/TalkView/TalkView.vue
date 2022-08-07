@@ -1,5 +1,5 @@
 <template>
-  <div class="talk scale">
+  <div class="talk opacity">
     <div class="messageList">
       <transition-group name="messageAnime">
         <div :key="index" v-for="(message,index) in messages">
@@ -7,7 +7,7 @@
             <img class="avatar" src="@/assets/m.jpg">
             <div class="information">
               <div class="status">
-                <p class="userName" v-html="message.account">用户名</p>
+                <p class="userName" v-html="message.name">名称</p>
                 <span class="main">鸑</span>
               </div>
               <div class="message">
@@ -24,6 +24,10 @@
           </div>
         </div>
       </transition-group>
+    </div>
+    <div class="sendMessageLayout pan-up">
+      <input class="messageInput gt-textInput" type="text" placeholder="输入你想发的内容(支持HTML)" />
+      <input class="buttonInput gt-button" type="button" value="👆发送👆" />
     </div>
   </div>
 </template>
