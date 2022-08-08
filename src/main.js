@@ -20,6 +20,8 @@ Vue.prototype.$theme = theme
 
 Vue.config.productionTip = false
 
+$(document).attr("title","Gentalk");
+
 /* ThemeCheck */
 const storageTheme = localStorage.getItem("theme")
 if (!$.isNumeric(storageTheme)){

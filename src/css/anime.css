@@ -35,7 +35,23 @@
     animation-name: pan-up;
     animation-duration: 1s;
 }
+
 @keyframes pan-up {
-    from {bottom: -100vw}
-    to {bottom: 0}
+    from {
+        bottom: -100vw;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width:480px) {
+    @keyframes pan-up {
+        from {
+            bottom: -100vh;
+        }
+        to {
+            bottom: 5vh;
+        }
+    }
 }

@@ -24,10 +24,11 @@
 
     --borderRadius: 5px;
 
-    --nameFontSize: .4em;
-    --contentFontSize: .8em;
+    --nameFontSize: .6em;
+    --contentFontSize: 1em;
 
-    --loadingFailed: url('@/assets/loadingfailed.png')
+    --loadingFailed: url('@/assets/loadingfailed.png');
+    --talkBackground: url('@/assets/graph-paper.svg');
 }
 
 *{
@@ -35,7 +36,6 @@
     padding: 0;
     outline: none;
     font-family: main, sans-serif;
-    /*overflow: hidden;*/
 }
 body{
     width: 100vw;

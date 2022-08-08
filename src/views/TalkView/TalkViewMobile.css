@@ -1,4 +1,7 @@
 @media screen and (max-width:480px){
+    body{
+        background: var(--theme);
+    }
 
     .messageAnime-enter-active, .messageAnime-leave-active {
         transition: all var(--transitionTime);
@@ -9,8 +12,8 @@
 
     .messageList{
         width: 95vw;
-        height: 88vh;
-        padding: 2vh 2.5vw 10vh;
+        height: 86vh;
+        padding: 2vh 2.5vw 12vh;
         overflow-x: hidden;
         overflow-y: scroll;
     }
@@ -30,6 +33,7 @@
     .information{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         margin-left: 2vw;
     }
     .status{
@@ -60,6 +64,8 @@
         color: var(--theme);
         font-size: var(--contentFontSize);
         word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
     }
 
     .sendMessageLayout{
@@ -68,7 +74,7 @@
         padding: 2vw;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         position: fixed;
         margin: auto;
         left: 0;
@@ -81,10 +87,21 @@
 
     .messageTextInput{
         min-width: 60vw;
+        flex-grow:1;
     }
     .sendButton{
         min-width: 25vw;
         min-height: 12.3vw;
+    }
+
+    .scrollHeightButton{
+        min-width: 12vw;
+        min-height: 12vw;
+        position: fixed;
+        right: 7vw;
+        bottom: 25vw;
+        font-size: 1.5em;
+        font-weight: bold;
     }
 
 }

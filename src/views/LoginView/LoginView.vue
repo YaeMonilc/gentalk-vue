@@ -9,7 +9,6 @@
       <input v-model="password" class="gt-textInput loginInput" type="password" placeholder="密码" />
       <button @click="login" class="gt-button outline loginButton mdui-ripple">登录</button>
     </div>
-
   </div>
 </template>
 

@@ -1,0 +1,118 @@
+@media screen and (min-width:480px){
+    body{
+        background: var(--theme);
+    }
+
+    .messageAnime-enter-active, .messageAnime-leave-active {
+        transition: all var(--transitionTime);
+    }
+    .messageAnime-enter, .messageAnime-leave-to {
+        opacity: 0;
+    }
+
+    .talk{
+        background: var(--talkBackground);
+    }
+
+    .messageList{
+        width: 97vw;
+        height: 96vh;
+        padding: 2vh 1.5vw;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .messageList::-webkit-scrollbar-thumb {
+        background-color: var(--stress);
+        border-radius: var(--borderRadius);
+        opacity: .1;
+    }
+    .messageItem{
+        margin-top: 1.5vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .messageItem-lines{
+        margin-top: .2vh;
+    }
+    .avatar{
+        width: 5vh;
+        border-radius: 100%;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1vh;
+        margin-top: 1vh;
+    }
+    .status{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .userName{
+        font-size: var(--nameFontSize);
+        color: var(--stress);
+    }
+    .message{
+        max-width: 45vh;
+        min-height: 1vh;
+        padding: 1vh;
+        margin-top: .5vh;
+        display: flex;
+        align-items: center;
+        background-color: var(--stress);
+        border-radius: var(--borderRadius);
+        overflow: hidden;
+    }
+    .message-lines{
+        margin-top: -.5vh;
+        margin-left: 5vh;
+    }
+    .content{
+        color: var(--theme);
+        font-size: var(--contentFontSize);
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+    }
+    .sendMessageLayout{
+        width: 30vh;
+        padding: 2vh;
+        margin: auto;
+        right: 5vh;
+        bottom: 5vh;
+        position: fixed;
+        z-index: 10;
+        background: var(--theme);
+        filter: var(--diffuseShadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-radius: var(--borderRadius);
+    }
+
+    .messageTextInput{
+        min-width: 0;
+        min-height: 5vh;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    .sendButton{
+        min-width: 0;
+        min-height: 5vh;
+        margin-top: 1vh;
+    }
+
+    .scrollHeightButton{
+        min-width: 5vh;
+        min-height: 5vh;
+        position: fixed;
+        top: 5vh;
+        right: 5vh;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+}

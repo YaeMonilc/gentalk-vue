@@ -8,7 +8,7 @@
             <div class="information">
               <div class="status">
                 <p class="userName" v-html="message.name">名称</p>
-                <span class="main outline">鸑</span>
+                <span v-if="false" class="main outline">鸑</span>
               </div>
               <div class="message">
                 <span class="content" v-html="message.text">TEST</span>
@@ -26,9 +26,10 @@
       </transition-group>
     </div>
     <div class="sendMessageLayout pan-up">
-      <input class="messageTextInput gt-textInput" type="text" placeholder="输入你想发的内容(支持HTML)" />
-      <button class="sendButton gt-button mdui-ripple">👆发送👆</button>
+      <input @input="messageTextInputChange" v-model="sendTextValue" class="messageTextInput gt-textInput" type="text" placeholder="输入你想发的内容(支持HTML)" />
+      <button id="sendMessage" @click="sendMessageClick" class="sendButton gt-button mdui-ripple">👆发送👆</button>
     </div>
+    <button @click="scrollToBottom" class="gt-button scrollHeightButton mdui-ripple">↓</button>
   </div>
 </template>
 
@@ -37,7 +38,7 @@
 </style>
 
 <style scoped>
-@import "@/views/TalkView/MessageTag.css";
+@import "@/views/TalkView/MessageHtmlTag.css";
 </style>
 
 <style scoped>

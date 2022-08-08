@@ -2,7 +2,7 @@
   <div class="index scale">
     <div class="layout">
       <p class="indexTitle">Gentalk</p>
-      <button @click="login" class="gt-button mdui-ripple">登录</button>
+      <button @click="login" class="gt-button mdui-ripple indexLongin">登录</button>
     </div>
   </div>
 </template>

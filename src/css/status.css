@@ -1,7 +1,21 @@
-.main{
-    font-size: .1em;
-    border-radius: var(--borderRadius);
-    text-align: center;
-    min-width: 10vw;
-    margin-left: 1vw;
+@media screen and (max-width:480px){
+    .main{
+        font-size: .1em;
+        border-radius: var(--borderRadius);
+        text-align: center;
+        min-width: 10vw;
+        margin-left: 1vw;
+        transition: all var(--transitionTime);
+    }
+}
+
+@media screen and (min-width:480px){
+    .main{
+        font-size: .1em;
+        border-radius: var(--borderRadius);
+        text-align: center;
+        min-width: 3vh;
+        margin-left: 1vh;
+        transition: all var(--transitionTime);
+    }
 }

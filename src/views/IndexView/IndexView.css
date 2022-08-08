@@ -1,0 +1,22 @@
+@media screen and (min-width:480px){
+    body{
+        background: var(--theme);
+    }
+
+    .layout{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .indexTitle{
+        font-size: 4.5em;
+        color: var(--stress);
+    }
+    .indexLongin{
+        min-width: 10vh;
+        min-height: 5vh;
+    }
+}
