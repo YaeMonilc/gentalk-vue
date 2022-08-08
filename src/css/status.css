@@ -1,7 +1,5 @@
 .main{
     font-size: .1em;
-    border: 1px solid var(--stress);
-    color: var(--stress);
     border-radius: var(--borderRadius);
     text-align: center;
     min-width: 10vw;

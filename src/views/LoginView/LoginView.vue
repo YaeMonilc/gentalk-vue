@@ -1,14 +1,15 @@
 <template>
   <div class="login scale">
     <div class="topBar">
-      <span class="title">登录</span>
-      <button @click="close" class="close gt-button">X</button>
+      <span class="loginTitle">登录</span>
+      <button @click="close" class="close gt-button mdui-ripple">X</button>
     </div>
-    <div class="layout">
-      <input v-model="account" class="input gt-textInput" type="text" placeholder="账号" />
-      <input v-model="password" class="input gt-textInput" type="password" placeholder="密码" />
-      <input @click="login" class="button gt-button" type="button" value="登录">
+    <div class="loginLayout">
+      <input v-model="account" class="gt-textInput loginInput" type="text" placeholder="账号" />
+      <input v-model="password" class="gt-textInput loginInput" type="password" placeholder="密码" />
+      <button @click="login" class="gt-button outline loginButton mdui-ripple">登录</button>
     </div>
+
   </div>
 </template>
 

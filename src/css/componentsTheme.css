@@ -28,3 +28,9 @@
 .gt-textInput:focus{
     filter: var(--diffuseShadow);
 }
+
+.outline{
+    color: var(--stress);
+    border: var(--stress) solid 1px;
+    background-color: var(--theme);
+}

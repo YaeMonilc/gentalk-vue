@@ -5,33 +5,12 @@
 
 :root{
 
-    /* Black(暗黑) */
-    /*--theme: #2c2c2c;
-    --stress: #6b6b6b;*/
+    /* DefaultTheme */
+    /* Please go to main.js
+    /* ------------ */
 
-    /* Emerald(翡翠) */
-    /*--theme: #ffffff;
-    --stress: #38b48b;*/
-
-    /* Calamus(菖蒲) */
-    /*--theme: #ffffff;
-    --stress: #cc7eb1;*/
-
-    /* Peach(桃) */
-    /*--theme: #ffffff;
-    --stress: #f09199;*/
-
-    /* Ultramarine(群青) */
-    --theme: #ffffff;
-    --stress: #4c6cb3;
-
-    /* Shion(紫苑) */
-    /*--theme: #ffffff;
-    --stress: #867ba9;*/
-
-    /* Half(半) */
-    /*--theme: #ffffff;
-    --stress: #a69abd;*/
+    --theme: #FFFFFF;
+    --stress: #FFFFFF;
 
     --warnColor: #FFFFFF;
 
@@ -56,7 +35,7 @@
     padding: 0;
     outline: none;
     font-family: main, sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 body{
     width: 100vw;

@@ -1,8 +1,8 @@
 <template>
   <div class="index scale">
     <div class="layout">
-      <p class="title">Gentalk</p>
-      <input @click="login" class="gt-button" type="button" value="登录" />
+      <p class="indexTitle">Gentalk</p>
+      <button @click="login" class="gt-button mdui-ripple">登录</button>
     </div>
   </div>
 </template>

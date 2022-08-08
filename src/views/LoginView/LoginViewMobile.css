@@ -15,7 +15,7 @@
         overflow: hidden;
     }
 
-    .login > .topBar {
+    .topBar {
         width: 90vw;
         height: 5vw;
         display: flex;
@@ -25,16 +25,17 @@
         padding: 8vw 5vw;
     }
 
-    .topBar > .title {
+    .loginTitle {
         font-size: 1.5em;
+        color: var(--stress);
     }
 
-    .topBar > .close {
+    .close {
         min-width: 8vw;
         min-height: 8vw;
     }
 
-    .login > .layout {
+    .loginLayout {
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -43,15 +44,16 @@
         margin-bottom: 10vw;
     }
 
-    .layout > .input {
+    .loginInput {
+        width: 65vw;
         min-height: 14vw;
         margin-top: 5vw;
         text-align: center;
     }
 
-    .layout > .button {
-        min-width: 80vw;
-        min-height: 14vw;
-        margin-top: 20vw;
+    .loginButton {
+        width: 71vw;
+        min-height: 16vw;
+        margin-top: 12vw;
     }
 }

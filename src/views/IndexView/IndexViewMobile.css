@@ -7,7 +7,7 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    .title{
+    .indexTitle{
         font-size: 3.5em;
         color: var(--stress);
     }
