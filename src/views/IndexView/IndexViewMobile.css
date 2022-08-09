@@ -1,18 +1,5 @@
-@media screen and (max-width:480px){
-    body{
-        background: var(--theme);
-    }
-
-    .layout{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .indexTitle{
+@media screen and (max-width: 480px){
+    .index-Title{
         font-size: 3.5em;
-        color: var(--stress);
     }
 }

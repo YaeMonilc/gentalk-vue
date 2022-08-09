@@ -1,8 +1,8 @@
 <template>
   <div class="index scale">
-    <div class="layout">
-      <p class="indexTitle">Gentalk</p>
-      <button @click="login" class="gt-button mdui-ripple indexLongin">登录</button>
+    <div class="index-Layout">
+      <p class="index-Title">Gentalk</p>
+      <button @click="login" class="gt-button mdui-ripple index-Longin">登录</button>
     </div>
   </div>
 </template>
@@ -12,7 +12,11 @@
 </style>
 
 <style scoped>
-@import "@/views/IndexView/IndexViewMobile.css";
+  @import "@/views/IndexView/IndexViewDesktop.css";
+</style>
+
+<style scoped>
+  @import "@/views/IndexView/IndexViewMobile.css";
 </style>
 
 <script>

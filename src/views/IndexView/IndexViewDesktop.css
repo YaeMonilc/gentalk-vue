@@ -1,0 +1,9 @@
+@media screen and (min-width: 480px){
+    .index-Title{
+        font-size: 4.5em;
+    }
+    .index-Longin{
+        min-width: 10vh;
+        min-height: 5vh;
+    }
+}

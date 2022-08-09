@@ -5,7 +5,6 @@ import $ from 'jquery'
 
 import '@/css/theme.css'
 import '@/css/anime.css'
-import '@/css/status.css'
 import '@/css/componentsTheme.css'
 
 import "@/../node_modules/mdui/dist/css/mdui.css"

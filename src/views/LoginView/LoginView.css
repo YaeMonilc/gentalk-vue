@@ -1,67 +1,26 @@
-@media screen and (min-width:480px){
-    body{
-        background: var(--theme);
-    }
+body{
+    background: var(--theme);
+}
 
-    .login{
-        width: 40vh;
-        height: 60vh;
-        position: fixed;
-        margin: auto;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: var(--theme);
-        border-radius: var(--borderRadius);
-        filter: var(--diffuseShadow);
-    }
+.login-TopBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-Title{
+    color: var(--stress);
+}
+.login-Close{
+    font-size: .5em;
+}
 
-    .topBar {
-        width: 80%;
-        height: 5vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 10%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    .loginTitle{
-        font-size: 2em;
-        color: var(--stress);
-    }
-
-    .close{
-        min-width: 4vh;
-        min-height: 4vh;
-        font-size: .5em;
-    }
-
-    .loginLayout{
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-    }
-
-    .loginInput{
-        min-width: 25vh;
-        min-height: 6vh;
-        padding-left: 2vh;
-        padding-right: 2vh;
-        margin-top: 2vh;
-    }
-
-    .loginButton{
-        min-width: 29vh;
-        min-height: 6vh;
-        margin-top: 3vh;
-    }
-
+.login-Layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-Input{
+    text-align: center;
 }

@@ -1,39 +1,34 @@
+.talk-Content > img{
+    border-radius: var(--borderRadius);
+    object-fit: cover;
+}
+.talk-Content > img:before{
+    content:'(看到这个就代表图片加载失败了)';
+    background: var(--loadingFailed);
+    background-size: 100% 100%;
+    display: block;
+    text-align: center;
+    color: var(--warnColor);
+}
+
 @media screen and (min-width:480px){
-    .content > img{
+    .talk-Content > img{
         width: 35vh;
         max-height: 70vh;
-        margin-bottom: 1vh;
-        border-radius: var(--borderRadius);
-        object-fit: cover;
     }
-    .content > img:before{
-        content:'(看到这个就代表图片加载失败了)';
+    .talk-Content > img:before{
         width: 35vh;
         height: 40vh;
-        background: var(--loadingFailed);
-        background-size: 100% 100%;
-        display: block;
-        text-align: center;
-        color: var(--warnColor);
     }
 }
 
 @media screen and (max-width:480px){
-    .content > img{
+    .talk-Content > img{
         width: 60vw;
         max-height: 120vw;
-        margin-bottom: 1vh;
-        border-radius: var(--borderRadius);
-        object-fit: cover;
     }
-    .content > img:before{
-        content:'(看到这个就代表图片加载失败了)';
+    .talk-Content > img:before{
         width: 60vw;
         height: 65vw;
-        background: var(--loadingFailed);
-        background-size: 100% 100%;
-        display: block;
-        text-align: center;
-        color: var(--warnColor);
     }
 }

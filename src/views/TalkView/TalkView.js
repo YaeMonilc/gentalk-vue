@@ -45,19 +45,20 @@ export default {
                 "name": "User(localhost)",
                 "text": this.sendTextValue
             })
+            this.sendTextValue = ""
         },
         sendMessage : function (json) {
             this.messages.push(json)
             this.scrollToBottom(200)
         },
         scrollToBottom : function (time) {
-            const list = $(".messageList").get(0)
-            $(".messageList").animate({
+            const list = $(".talk-MessageList").get(0)
+            $(".talk-MessageList").animate({
                 scrollTop: list.scrollHeight
             }, time);
         },
         scrollToBottomAuto : function (){
-            const list = $(".messageList").get(0)
+            const list = $(".talk-MessageList").get(0)
             const scrollTop = parseInt(list.scrollTop)
             const scrollHeight = parseInt(list.scrollHeight)
             const offsetHeight = parseInt(list.offsetHeight)
@@ -68,19 +69,19 @@ export default {
     },
     mounted:function(){
         $('#sendMessage').fadeOut()
-        $('.scrollHeightButton').fadeOut()
+        $('#talk-ScrollHeightButton').hide()
 
 
-        $(".messageList").scroll(function () {
-            const list = $(".messageList").get(0)
-            const scrollHeightButton = $(".scrollHeightButton")
+        $(".talk-MessageList").scroll(function () {
+            const list = $(".talk-MessageList").get(0)
+            const scrollHeightButton = $("#talk-ScrollHeightButton")
             const scrollTop = parseInt(list.scrollTop)
             const scrollHeight = parseInt(list.scrollHeight)
             const offsetHeight = parseInt(list.offsetHeight)
             if (((scrollHeight - offsetHeight) - scrollTop) > (26 * 6)){
-                scrollHeightButton.fadeIn(350)
+                scrollHeightButton.show(150)
             }else {
-                scrollHeightButton.fadeOut(350)
+                scrollHeightButton.hide(150)
             }
         })
     }

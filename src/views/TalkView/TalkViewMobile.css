@@ -1,107 +1,66 @@
 @media screen and (max-width:480px){
-    body{
-        background: var(--theme);
-    }
 
-    .messageAnime-enter-active, .messageAnime-leave-active {
-        transition: all var(--transitionTime);
-    }
-    .messageAnime-enter, .messageAnime-leave-to {
-        opacity: 0;
-    }
-
-    .messageList{
+    .talk-MessageList{
         width: 95vw;
         height: 86vh;
         padding: 2vh 2.5vw 12vh;
-        overflow-x: hidden;
-        overflow-y: scroll;
     }
-    .messageItem{
-        margin-top: 3vw;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+    .talk-MessageItem{
+        margin-top: 4vw;
     }
-    .messageItem-lines{
-        margin-top: 1vw;
+    .talk-Message-Lines{
+        margin-top: 2vw;
     }
-    .avatar{
+    .talk-Avatar{
         width: 10vw;
-        border-radius: 100%;
     }
-    .information{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+
+    .talk-Information{
+        margin-top: 2vw;
         margin-left: 2vw;
     }
-    .status{
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
+    .talk-Information-Lines{
+        margin-top: 1vw;
+        margin-left: 2vw;
     }
-    .userName{
-        font-size: var(--nameFontSize);
-        color: var(--stress);
-    }
-    .message{
+    .talk-Message{
         max-width: 60vw;
         min-height: 5vw;
         padding: 2vw;
         margin-top: 1vw;
-        display: flex;
-        align-items: center;
-        background-color: var(--stress);
-        border-radius: var(--borderRadius);
-        overflow: hidden;
     }
-    .message-lines{
+    .talk-Message-Lines{
         margin-top: 0;
         margin-left: 10vw;
     }
-    .content{
-        color: var(--theme);
-        font-size: var(--contentFontSize);
-        word-wrap: break-word;
-        display: flex;
-        flex-direction: column;
-    }
 
-    .sendMessageLayout{
+    .talk-SendMessageLayout{
         width: 96vw;
         height: 14vw;
         padding: 2vw;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        position: fixed;
-        margin: auto;
         left: 0;
         bottom: 0;
         right: 0;
         border-top-left-radius: var(--borderRadius);
         border-top-right-radius: var(--borderRadius);
         background: var(--stress);
+        align-items: center;
+        justify-content: flex-start;
     }
-
-    .messageTextInput{
+    .talk-MessageTextInput{
         min-width: 60vw;
         flex-grow:1;
     }
-    .sendButton{
+    .talk-SendButton{
         min-width: 25vw;
         min-height: 12.3vw;
     }
 
-    .scrollHeightButton{
+    .talk-ScrollHeightButton{
         min-width: 12vw;
         min-height: 12vw;
-        position: fixed;
         right: 7vw;
         bottom: 25vw;
-        font-size: 1.5em;
-        font-weight: bold;
     }
 
 }

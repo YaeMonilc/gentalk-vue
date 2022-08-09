@@ -1,7 +1,4 @@
 @media screen and (max-width:480px) {
-    body{
-        background: var(--theme);
-    }
 
     .login {
         width: 100vw;
@@ -19,43 +16,31 @@
         overflow: hidden;
     }
 
-    .topBar {
+    .login-TopBar {
         width: 90vw;
         height: 5vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         padding: 8vw 5vw;
     }
-
-    .loginTitle {
+    .login-Title {
         font-size: 1.5em;
-        color: var(--stress);
     }
-
-    .close {
+    .login-Close {
         min-width: 8vw;
         min-height: 8vw;
     }
 
-    .loginLayout {
+    .login-Layout {
         height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         margin-bottom: 10vw;
     }
 
-    .loginInput {
+    .login-Input {
         width: 65vw;
         min-height: 14vw;
         margin-top: 5vw;
-        text-align: center;
     }
 
-    .loginButton {
+    .login-Button {
         width: 71vw;
         min-height: 16vw;
         margin-top: 12vw;

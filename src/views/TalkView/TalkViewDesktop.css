@@ -1,0 +1,78 @@
+@media screen and (min-width:480px){
+
+    .talk{
+        background: var(--talkBackground);
+    }
+
+    .talk-MessageList{
+        width: 97vw;
+        height: 96vh;
+        padding: 2vh 1.5vw;
+    }
+    .talk-MessageList::-webkit-scrollbar-thumb {
+        background-color: var(--stress);
+        border-radius: var(--borderRadius);
+        opacity: .1;
+    }
+
+    .talk-MessageItem{
+        margin-top: 1.5vh;
+    }
+    .talk-Message-Lines{
+        margin-top: .2vh;
+    }
+    .talk-Avatar{
+        width: 5vh;
+    }
+
+    .talk-Information{
+        margin-left: 1vh;
+        margin-top: 1vh;
+    }
+    .talk-Information-Lines{
+        margin-left: 1vh;
+        margin-top: 1vh;
+    }
+    .talk-Message{
+        max-width: 45vh;
+        min-height: 1vh;
+        padding: 1vh;
+        margin-top: .5vh;
+    }
+    .talk-Message-Lines{
+        margin-top: -.5vh;
+        margin-left: 5vh;
+    }
+
+    .talk-SendMessageLayout{
+        width: 30vh;
+        padding: 2vh;
+        right: 5vh;
+        bottom: 5vh;
+        position: fixed;
+        z-index: 5;
+        background: var(--theme);
+        filter: var(--diffuseShadow);
+        border-radius: var(--borderRadius);
+        flex-direction: column;
+    }
+    .talk-MessageTextInput{
+        min-width: 0;
+        min-height: 5vh;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    .talk-SendButton{
+        min-width: 0;
+        min-height: 5vh;
+        margin-top: 1vh;
+    }
+
+    .talk-ScrollHeightButton{
+        min-width: 5vh;
+        min-height: 5vh;
+        top: 5vh;
+        right: 5vh;
+    }
+
+}
