@@ -34,6 +34,7 @@ if (!$.isNumeric(storageTheme)){
   }
 }
 
+
 new Vue({
   router,
   render: h => h(App)

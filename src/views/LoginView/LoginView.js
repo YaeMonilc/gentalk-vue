@@ -1,5 +1,6 @@
 import $ from "jquery";
 let Base64 = require('js-base64').Base64;
+import Cookies from 'js-cookie'
 
 export default {
     name: 'login',
@@ -10,6 +11,8 @@ export default {
         }
     },
     mounted:function () {
+        if (Cookies.get("token") !== "")
+            this.$router.push("/talk")
     },
     methods: {
         close : function () {
@@ -17,11 +20,11 @@ export default {
         },
         login : function () {
             const _this = this
-            var url = (this.$global.head + this.$global.serverUrl + "/login/{account}/{password}")
+            const url = (this.$global.head + this.$global.serverUrl + "/login/{account}/{password}")
                 .replaceAll("{account}", this.account)
                 .replaceAll("{password}", this.password)
             $.get(url,function(data){
-                var decodeData = Base64.decode(data)
+                const decodeData = Base64.decode(data)
                 if (typeof decodeData == 'string') {
                     try {
                         const json = JSON.parse(decodeData)
@@ -36,7 +39,7 @@ export default {
                             }
                         }
                     } catch(e) {
-                        _this.$global.token = decodeData
+                        Cookies.set("token", decodeData)
                         _this.$router.push("/talk")
                     }
                 }
