@@ -1,0 +1,1 @@
+body{background:var(--theme)}.index-Layout{width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:space-evenly}.index-Title{color:var(--stress)}@media screen and (min-width:480px){.index-Title{font-size:4.5em}.index-Longin{min-width:10vh;min-height:5vh}}@media screen and (max-width:480px){.index-Title{font-size:3.5em}}
